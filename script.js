@@ -54,6 +54,7 @@ togglePassword.addEventListener('click', function () {
 });
 
 const onlineId = document.getElementById('idInput');
+const topID = document.getElementById('topID');
 
 
 onlineId.addEventListener('blur', (e) => {

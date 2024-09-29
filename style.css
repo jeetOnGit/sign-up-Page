@@ -80,6 +80,9 @@ body {
   background-color: transparent;
   border: none;
 }
+.enrollBtn a{
+  text-decoration: none;
+}
 .userAction button a{
   color: #4e892c;
   border: 1px solid #4e892c;
@@ -180,11 +183,15 @@ form .userINP {
   font-size: 10px;
   top: 1px;
   left: 12px;
+  color: #4e892c;
+  font-weight: 600;
 }
-.onlineID ..top{
+.onlineID .onlineIdText.top{
   font-size: 10px;
   top: 1px;
   left: 12px;
+  color: #4e892c;
+  font-weight: 600;
 }
 .onlineID:focus-within, .password:focus-within .placeHolder{
   color: #4e892c;
