@@ -44,11 +44,30 @@ const passwordInput = document.getElementById('password');
 const togglePassword = document.getElementById('togglePassword');
 const passwordHolder = document.getElementById('passwordHolder');
 
+
 togglePassword.addEventListener('click', function () {
   
   const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
   passwordInput.setAttribute('type', type);
 
-  passwordHolder.classList.add("topPassword")
   this.textContent = type === 'password' ? 'Show' : 'Hide';
 });
+
+const onlineId = document.getElementById('idInput');
+
+
+onlineId.addEventListener('blur', (e) => {
+  if(e.target.value){
+    topID.classList.add('top')
+  }else{
+    topID.classList.remove('top')
+  }
+})
+
+passwordInput.addEventListener('blur', (e) => {
+  if(e.target.value){
+    passwordHolder.classList.add('top')
+  }else{
+    passwordHolder.classList.remove('top')
+  }
+})
